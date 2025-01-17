@@ -8,8 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customPurple: '#EDC7FF', // Color fijo personalizado
+        background: "var(--background)", // Color desde variable CSS
+        foreground: "var(--foreground)", // Otro color desde variable CSS
       },
     },
   },
