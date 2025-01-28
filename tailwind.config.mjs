@@ -9,6 +9,8 @@ export default {
     extend: {
       colors: {
         customPurple: '#EDC7FF', // Color fijo personalizado
+        customDarkPurple: '#937AC1', // Color fijo personalizado
+        customPink: '#DF9AFF', // Color fijo personalizado
         background: "var(--background)", // Color desde variable CSS
         foreground: "var(--foreground)", // Otro color desde variable CSS
       },
