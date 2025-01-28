@@ -35,11 +35,13 @@ function RegisterPage() {
   console.log(errors);
 
   return (
-    <div className="h-[calc(100vh-7rem)] flex justify-center items-center">
-      <form onSubmit={onSubmit} className="w-1/4">
-        <h1 className="text-slate-200 font-bold text-4xl mb-4">Register</h1>
+    
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 ">
+      <h1 className="text-purple-400 font-bold text-center text-4xl mb-4">Register</h1>
+      <form onSubmit={onSubmit} className=" bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        
 
-        <label htmlFor="username" className="text-slate-500 mb-2 block text-sm">
+        <label htmlFor="username" className="text-black mb-2 block text-sm">
           Username:
         </label>
         <input
@@ -50,7 +52,7 @@ function RegisterPage() {
               message: "Username is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block mb-2  text-black w-full"
           placeholder="yourUser123"
         />
 
@@ -60,7 +62,7 @@ function RegisterPage() {
           </span>
         )}
 
-        <label htmlFor="email" className="text-slate-500 mb-2 block text-sm">
+        <label htmlFor="email" className="text-black mb-2 block text-sm">
           Email:
         </label>
         <input
@@ -71,14 +73,14 @@ function RegisterPage() {
               message: "Email is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block mb-2 text-black w-full"
           placeholder="user@email.com"
         />
         {errors.email && (
           <span className="text-red-500 text-xs">{errors.email.message}</span>
         )}
 
-        <label htmlFor="password" className="text-slate-500 mb-2 block text-sm">
+        <label htmlFor="password" className="text-black mb-2 block text-sm">
           Password:
         </label>
         <input
@@ -89,7 +91,7 @@ function RegisterPage() {
               message: "Password is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block  text-black w-full"
           placeholder="********"
         />
         {errors.password && (
@@ -100,7 +102,7 @@ function RegisterPage() {
 
         <label
           htmlFor="confirmPassword"
-          className="text-slate-500 mb-2 block text-sm"
+          className="text-black mb-2 block text-sm"
         >
           Confirm Password:
         </label>
@@ -112,7 +114,7 @@ function RegisterPage() {
               message: "Confirm Password is required",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block mb-2  text-black w-full"
           placeholder="********"
         />
         {errors.confirmPassword && (
@@ -121,9 +123,7 @@ function RegisterPage() {
           </span>
         )}
 
-        <button className="w-full bg-blue-500 text-white p-3 rounded-lg mt-2">
-          Register
-        </button>
+<button type="submit" class="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Register</button>
       </form>
     </div>
   );
