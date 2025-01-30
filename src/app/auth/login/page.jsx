@@ -54,11 +54,11 @@ function LoginPage() {
       )}
 
       <h1 className="text-customDarkPurple font-bold text-6xl mb-4">Kutplix</h1>
-      <p className="text-black mb-10">
+      <p className="text-black mb-12">
         Diseños increíbles para tu negocio al instante.
       </p>
 
-      <div className="bg-white p-8 rounded-lg shadow-xl mb-10 w-full">
+      <div className="bg-white p-8 rounded-lg shadow-xl mb-12 w-full">
         <input
           type="email"
           {...register("email", {
@@ -104,7 +104,7 @@ function LoginPage() {
         </button>
       </div>
 
-      <button className="flex items-center justify-center w-full p-3 bg-white text-gray-800 font-semibold rounded-lg hover:bg-gray-100">
+      <button className="flex items-center justify-center w-full p-3 mt-15 bg-white text-gray-800 font-semibold rounded-lg hover:bg-gray-100">
         <img
           src="/image/google.png"
           alt="Google Logo"
